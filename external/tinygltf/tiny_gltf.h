@@ -2631,9 +2631,6 @@ bool ReadWholeFile(std::vector<unsigned char> *out, std::string *err,
   }
 #else
 #ifdef __OHOS__
-
-
-    // 读取全文件；
     if (rawfile_manager) {
         RawFile* rawfile = OH_ResourceManager_OpenRawFile(rawfile_manager, filepath.c_str());
         if (!rawfile) {

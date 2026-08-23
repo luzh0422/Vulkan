@@ -480,7 +480,7 @@ void VulkanExampleBase::renderLoop()
 				lastTimestamp = tEnd;
 			}
 
-            // 更新UI;
+            // update UI;
             updateOverlay();
 
 			bool updateView = false;
@@ -1663,7 +1663,7 @@ void VulkanExampleBase::handleAppCommand(android_app * app, int32_t cmd)
 void VulkanExampleBase::handleAppInput(OH_NativeXComponent *component, void *window, void* pThis) {
     OH_NativeXComponent_TouchEvent touchEvent;
 
-    // 获取触摸事件信息
+    // get touchEvents
     int32_t ret = OH_NativeXComponent_GetTouchEvent(component, window, &touchEvent);
     if (ret != OH_NATIVEXCOMPONENT_RESULT_SUCCESS) {
         return;
